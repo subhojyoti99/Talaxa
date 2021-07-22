@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Navbar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="welcome.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script
+  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show')
+            })
+        })
+        </script>
+    </head>
+    <body>
+        <nav>
+            <label class="logo">Hao Mao Kao</label>
+            <ul>
+                <li><a herf="">Home</a></li>
+                <li><a herf="">Products</a></li>
+                <li><a herf="">About</a></li>
+                <li><a herf="">Contact</a></li>
+                <li><a herf="">Account</a></li>
+                <li><a href="index.html"  onclick="logout()">logout</a></li>
+                
+            </ul>
+            <lebel id="icon">
+                <i class="fas fa-bars"></i>
+            
+            </lebel>
+        </nav>
+        
+        
+        
+                
+        <div id="user" onclick="logout()">
+            
+        </div>  
+        
+        
+        
+        
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
+        <script>
+            var firebaseConfig = {
+            apiKey: "AIzaSyAxOqw3SWp4ZpQPfxAMleoiI3EoXNFHJzc",
+            authDomain: "everything-325a3.firebaseapp.com",
+            projectId: "everything-325a3",
+            storageBucket: "everything-325a3.appspot.com",
+            messagingSenderId: "432499969633",
+            appId: "1:432499969633:web:8687e8a07f833f34516420",
+            measurementId: "G-5YVETLBZV0"
+        };
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        
+        <script src="index.js"></script>
+    
+    </body>
+
+</html>
