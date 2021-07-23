@@ -9,7 +9,7 @@ body{
 
 .container{
     max-width: 1800px;
-    height: 969px;
+    height: 650px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -112,4 +112,28 @@ form a{
     margin-top: 8px;
     transform: translateX(150px);
     transition: transform 1s;
+}
+
+.fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+  }
+  
+  .container_2{
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    position:center;
+    padding: 10px;
+    margin:auto;
 }
