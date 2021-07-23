@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0>
+        <title>Social-Service | The E-Social Site</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        
+<!---------------     login-page      ------------>
+        
+        <div class="account-page">
+            <div style="background-image: url('images/background.png'); background-size: 100% 100%; ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">Login</span>
+                                <span onclick="register()">Register</span>
+                                <hr id="Indicator">
+                            </div>
+                            
+                            <form id="LoginForm">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Login</button>
+                                <a href="">Forgot passord</a>
+                            </form>
+                            
+                            <form id="RegForm">
+                                <input type="text" placeholder="Name">
+                                <input type="email" placeholder="Email">
+                                <input type="number" placeholder="Number">
+                                <input type="password" placeholder="Password">
+                                <input type="password" placeholder="Confirm Password">
+                                <button type="submit" class="btn">Register</button>
+                            </form>
+                            
+                        </div>
+                    </div>
+                
+                </div>
+            
+            
+            
+            </div>
+        
+        
+        </div>
+        
+        </div>
+        
+        
+<!----------------- js for toggle login-page  ---------------->
+        
+        <script>
+            
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indecator = document.getElementById("Indecator");
+            
+            function register(){
+                RegForm.style.transform ="translateX(0px)";
+                LoginForm.style.transform ="translateX(0px)";  
+                Indicator.style.transform ="translateX(150px)"; 
+            }
+            
+            function login(){
+                RegForm.style.transform ="translateX(300px)";
+                LoginForm.style.transform ="translateX(300px)";
+                Indicator.style.transform ="translateX(50px)";
+            }
+        </script>
+        
+        
+    </body>
+</html>
