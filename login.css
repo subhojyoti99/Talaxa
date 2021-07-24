@@ -5,43 +5,12 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background: #D3D3D3;
-}
-.navbar{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-nav{
-    flex: 1;
-    text-align: right;
-}
-nav ul{
-    display: inline-block;
-    list-style-type: none;
-}
-nav ul li{
-    display: inline-block;
-    margin-right: 20px;
-}
-.header{
-    background: #899499;
-}
-.header .row{
-    margin-top: 70px;
-    margin-bottom: 50px;
+    background: black;
 }
 
-
-a{
-    text-decoration: none;
-    color: #555;
-}
-p{
-    color: #555;
-}
 .container{
     max-width: 1800px;
+    height: 969px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -52,18 +21,9 @@ p{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.col-2{
-    flex-basis: 50%;
-    min-width: 300px;
-}
-.col-2 img{
-    max-width: 80%;
-    padding: 50px 0;
-}
-
 a{
     text-decoration: none;
-    color: #555;
+    color: teal;
 }
 .btn{
     display: inline-block;
@@ -75,21 +35,25 @@ a{
     transition: background 0.5s;
     transition: transform 0.5s;
     cursor: pointer;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.1);
+    text-decoration: none;
+    overflow: hidden;
+    transition: top 0.5s, z-index 0s, transform 0.5s;
+    transition-delay: 0.5s, 0.5s, 0s;
 }
 .btn:hover{
-    background: #563434;
+    background: rgba(255,255,255,0.5);
     transform: translateY(-5px);
 }
 /*------------    account-page       ------------*/
 
-.account-page{
-    padding: 50px 0;
-    background: radial-gradiant(#fff,#ffd6d6)
-}
 .form-container{
-    background: #fff;
+    top: 200px;
     width: 300px;
-    height: 400px;
+    height: 450px;
     position: relative;
     text-align: center;
     padding: 20px 0;
@@ -97,11 +61,16 @@ a{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
     overflow: hidden;
     border-radius: 30px;
+    backdrop-filter: blur(16px) brightness(108%);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
 }
 .form-container span{
     font-weight: bold;
     padding: 0 10px;
-    color: #555;
+    color: violet;
     cursor: pointer;
     width: 100px;
     display: inline-block;
@@ -121,7 +90,9 @@ form input{
     height: 30px;
     margin: 10px 0;
     padding: 0 10px;
-    border: 1px solid #ccc;
+    border: 1px solid aqua;
+    background: black;
+    color: azure;
 }
 form .btn{
     width: 100%;
@@ -141,103 +112,81 @@ form a{
 #Indicator{
     width: 100px;
     border: none;
-    background: #563434;
+    background: pink;
     height: 3px;
     margin-top: 8px;
     transform: translateX(150px);
     transition: transform 1s;
 }
-/*------------footer------------*/
-
-.footer{
-    background: #000;
-    color: #8a8a8a;
-    font-size: 14px;
-    padding: 60px 0 20px;
+section{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
 }
-.footer p{
-    color: #8a8a8a;
-}
-.footer h3{
-    color: #fff;
-    margin-bottom: 20px;
-}
-.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
-    min-width: 250px;
-    margin-bottom: 20px;
-} 
-.footer-col-1{
-    flex-basis: 30%;
-}
-.footer-col-2{
-    flex-basis: 1;
-    text-align: center;
-}
-.footer-col-2 img{
-    width: 180px;
-    margin-bottom: 20px;
-}
-.footer-col-3, .footer-col-4{
-    flex-basis: 12%;
-    text-align: center;
+section::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    z-index: 10;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
 }
 ul{
-    list-style-type: none;
+    position: relative;
+    display: flex;
 }
-.app-logo{
-    margin-top: 20px;
-}
-.app-logo img{
-    width: 140px;
-}
-.footer hr{
-    border: none;
-    background: #b5b5b5;
-    height: 1px;
-    margin: 20px;
-}
-.copyright{
+li{
+    position: relative;
+    list-style: none;
+    margin: 10px;
     text-align: center;
 }
-.menu-icon{
-    width: 28px;
-    margin-left: 20px;
-    display: none;
+a{
+    position: relative;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-left: 5px;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.1);
+    text-decoration: none;
+    overflow: hidden;
+    transition: top 0.5s, z-index 0s, transform 0.5s;
+    transition-delay: 0.5s, 0.5s, 0s;
 }
-
-/*---------------- media query for menu ----------------*/
-
-@media only screen and (max-width:800px){
-    
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #333;
-        width: 100%;
-        overflow: hidden;
-        transition: max-height 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul li a{
-        color: #fff;
-    }
-    .menu-icon{
-        display: block;;
-        cursor: pointer;
-    }
+a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100px;
+    background: rgba(255,255,255,0.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: 0.5s;
 }
-/*---------------- media query for less than 600 screen size ----------------*/
-@media only screen and (max-width:600px){
-    .row{
-    text-align: center;
-    }
-    .col-2, .col-3, .col-4{
-        flex-basis: 100%;
-    }
+a:hover{
+    transition-delay: 0s, 0.5s, 0.5s;
+    top: -50px;
+    transform: translate(-20px -40px) rotate(-25deg) scale(1.4);
+    z-index: 11;
+
 }
