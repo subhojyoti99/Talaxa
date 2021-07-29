@@ -159,6 +159,11 @@ section .title::after{
 }
 
   
+/* Home Section */
+.home-container{
+    height: 600px;
+    width: 100%;
+} 
 
 
 
