@@ -3,15 +3,34 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box; 
 }
+.title{
+    text-align: left;
+    margin: 10px 10px;
+    position: relative;
+    display: inline-block;
+    line-height: 60px;
+    color: azure;
+}
+.title::after{
+    content: '';
+    background: azure;
+    width: 250px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 body{
     font-family: 'Poppins', sans-serif;
-    width: 100%;
+     width: 100%;
 }
 nav{
     align-items: center;
-    width: 100%;
-    height: 969px;
     padding: 20px;
 }
 label.logo{
@@ -33,7 +52,7 @@ nav li{
     line-height: 80px
 }
 nav a{
-    color: dimgrey;
+    color: azure;
     font-size: 18px;
     text-transform: uppercase;
     border: 1px solid transparent;
@@ -44,13 +63,28 @@ a.active,a:hover{
     border: 1px solid gray;
 }
 nav #icon{
-    color: black;
+    color: aqua;
     float: right;
     margin-right: 20px;
     font-size: 30px;
     line-height: 80px;
     cursor: pointer;
 }
+
+/*------------categories------------*/
+
+.categories{
+    box-sizing: border-box;
+    height: 500px;
+}
+
+
+
+
+
+
+
+
 /*------------footer------------*/
 
 .footer{
@@ -169,6 +203,32 @@ ul{
 .kst a:hover{
     transform: translateY(-100px);
 }
+
+
+/*------------footer video------------*/
+
+#videoBG {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG{
+    width: 100%;
+    height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG{
+    width: auto;
+    height: 100%;
+    }
+}
+
 
 @media (max-width:1048px){
     label.logo{

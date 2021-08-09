@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0>
+        <title>Social-Service | The E-Social Site</title>
+        <link rel="stylesheet" href="shayari.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+    <body>
+        <div style="background-image: url('images/background.png'); background-size: 100% 100%; ">
+            
+<!---------------     Header      ------------>
+        
+        
+        <div class="header">
+        
+                <div class="logo">
+                    <img src="">
+                    
+                </div>
+                <nav class="header">
+                    <h2 class="title">KST-TaLaXa</h2>
+                    <ul id="MenuItems">
+                        <li><a href="welcome.html">Home</a></li>
+                        <li><a href="categories.html">Communities</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="login.html">Account</a></li>
+                        <li><a href="login.html"  onclick="logout()">logout</a></li>
+                    </ul>
+                </nav>
+                <img src="" class="menu-icon" onclick="menutoggle()">
+        </div>
+      
+<!---------------     Shayari      ------------>
+            
+            
+            <!---------  create message box  -------->        
+            <div class="main-form">
+                <a>Wellcome To TalaxA Station...<br>Hey There...</a>
+
+<!---------  create form to send message  -------->
+                <form onsubmit="return sendshayari();">
+                    <input id="shayari" placeholder="Enter Shayari" autocomplete="off">
+                    <input id="shayar" type="file" name="" value="">
+
+                    <button type="submit">Send</button>
+                </form>
+        
+            </div>
+
+<!------- create a list   ---->
+        
+            <div class="main-list" id="l-shayari" >
+                <div class="list-item">
+                    <p align="center">Shayari...</p>        
+                </div>
+                
+            </div>
+        
+  
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+    </body>
+</html>
